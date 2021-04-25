@@ -1,5 +1,3 @@
-console.log("hello!");
-
 var heads = [0, 1, 2, 3, 4, 5];
 
 function getCtx() {
