@@ -144,3 +144,7 @@ dann <a href="https://twitter.com/chillya"><img src="https://img.shields.io/twit
 
 Übrigens, Du musst dafür kein Programmierer sein. Du kannst auch gerne das Projekt auf social media supporten oder einfach 
 mal deine Gedankengänge zu dem ganzen Thema beisteuern. Oder Du hast Lust die Anwendung zu testen oder, oder, oder...  
+
+# License
+
+The scripts and documentation in this project are released under the MIT License
