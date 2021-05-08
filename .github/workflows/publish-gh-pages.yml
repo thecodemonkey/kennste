@@ -9,8 +9,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: live
 
       - uses: actions/download-artifact@v2
+        name: kennste-dist
 
       - name: Display structure of downloaded files
         run: ls -R
