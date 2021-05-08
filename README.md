@@ -12,6 +12,8 @@ Viele von uns kennen mittlerweile diese Fragen und Diskussionen. Auch ich selbst
 Auf der Suche nach Antworten, habe ich mich ebenfalls bei den alternativen Medien umgeschaut. Für einen Nerd wie mich, sind es vor Allem **Daten** und **Algorithmen**. 
 Dies hat mich dazu bewogen eine eigene **COVID19 Simulation** zu entwickeln. 
 
+![covid simulation](src/assets/intro.png "covid 19 simulation")
+
 ## COVID19 Simulation
 
 Als Erstes soll die primäre Frage beantwortet werden, warum so wenige Menschen direkte COVID19 Erkrankte kennen?
