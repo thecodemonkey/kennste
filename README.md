@@ -1,5 +1,5 @@
 [![Build](https://github.com/thecodemonkey/kennste/actions/workflows/main.yml/badge.svg)](https://github.com/thecodemonkey/kennste/actions/workflows/main.yml)
-
+[![Publish](https://github.com/thecodemonkey/kennste/actions/workflows/publish-gh-pages.yml/badge.svg)](https://github.com/thecodemonkey/kennste/actions/workflows/publish-gh-pages.yml)
 
 
 # Kennste 
