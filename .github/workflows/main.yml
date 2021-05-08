@@ -34,7 +34,7 @@ jobs:
       - name: Push Build to Releases
         uses: actions/upload-artifact@v2
         with:
-          name: artifacts
+          name: kennste-dist
           path: dist/kennste-ng/
 
 
