@@ -19,3 +19,9 @@ jobs:
 
       - name: Display structure of downloaded files
         run: ls -R
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          branch: live
+          message: 'publish application to GitHub pagese(live branch)'
+          tag: 'v1.0.0 --force'
