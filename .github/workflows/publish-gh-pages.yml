@@ -13,7 +13,8 @@ jobs:
           ref: live
 
       - uses: actions/download-artifact@v2
-        name: kennste-dist
+        with:
+          name: kennste-dist
 
       - name: Display structure of downloaded files
         run: ls -R
