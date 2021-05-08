@@ -32,7 +32,9 @@ jobs:
           npm i
           npm run build
       - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
+        uses: actions/upload-artifact@v2
         with:
-          artifacts: "dist/kennste-ng/*"
-          token: ${{ secrets.TOKEN }}
+          name: artifacts
+          path: dist/kennste-ng/
+
+
