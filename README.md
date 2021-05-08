@@ -1,3 +1,7 @@
+[![Build](https://github.com/thecodemonkey/kennste/actions/workflows/main.yml/badge.svg)](https://github.com/thecodemonkey/kennste/actions/workflows/main.yml)
+
+
+
 # Kennste 
 
 > ### Kennst du Jemanden, der Corona hatte? <br/>
