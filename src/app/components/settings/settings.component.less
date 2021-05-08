@@ -1,0 +1,105 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #333;
+  z-index: 999;
+
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  color: #888;
+
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+
+  transition: all .5s;
+}
+
+:host.out {
+  left: -250px
+}
+
+
+:host > .close {
+  position:absolute;
+  margin: 0;
+  top: 20px;
+  left: 10px;
+  color: #888;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 30px;
+  width: 34px;
+  vertical-align: middle;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 2px;
+
+  transition: all .5s;
+}
+
+:host > .close::after {
+  content: "x";
+}
+
+:host > .close:hover {
+  background-color: #00000022;
+  color: #ff7575;
+}
+
+:host.out > .close {
+  left: 250px;
+  background-color: #fff;
+}
+
+:host.out > .close:hover {
+  background-color: #e5e5e5;
+}
+
+:host.out > .close::after {
+  content: "☰";
+}
+
+:host div {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  text-align: left;
+}
+
+input {
+  width: 155px;
+  margin-top: 7px;
+  background-color: #444;
+  border: none;
+  padding: 7px;
+  outline: none!important;
+  color: #ccc;
+  border-bottom: 1px solid transparent;
+}
+
+input:focus {
+  border-color: #ff7575;
+}
+
+button {
+  border: 1px solid #ff757511;
+  width: 155px;
+  background-color: #000;
+  color: #ff7575;
+  padding: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #111;
+  border-color: #ff757533;
+}

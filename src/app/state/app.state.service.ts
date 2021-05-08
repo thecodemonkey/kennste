@@ -3,5 +3,6 @@ import {StateProperty} from './state.property';
 
 @Injectable({providedIn: 'root'})
 export class AppStateService {
-  simulationRunning = new StateProperty<boolean>(false);
+  settingsOn = new StateProperty<boolean>(false);
+  spinnerOn = new StateProperty<boolean>(false);
 }

@@ -7,6 +7,7 @@ import { HospitalizationComponent } from './components/hospitalization/hospitali
 import { KpisComponent } from './components/kpis/kpis.component';
 import { KpiItemComponent } from './components/kpis/kpi-item/kpi-item.component';
 import { OutbreakAreaComponent } from './components/outbreak-area/outbreak-area.component';
+import { SpinnerComponent } from './shared/spinner/spinner.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { OutbreakAreaComponent } from './components/outbreak-area/outbreak-area.
     HospitalizationComponent,
     KpisComponent,
     KpiItemComponent,
-    OutbreakAreaComponent
+    OutbreakAreaComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule

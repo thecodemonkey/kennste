@@ -1,0 +1,37 @@
+:host {
+  border-bottom: 1px solid #666;
+  padding: 30px 10px;
+  display: flex;
+  flex-flow: column;
+  cursor: default;
+
+  transition: all .5s;
+
+  span  {
+    display: block;
+    font-size: 12px;
+    font-weight: lighter;
+    color: #aaa;
+  }
+
+  span.kpi {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #ddd;
+    padding-bottom: 10px;
+  }
+}
+
+:host:hover {
+  background-color: #333;
+}
+
+.warning .kpi {
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ff7575!important;
+  padding-bottom: 10px;
+}
+
+
+

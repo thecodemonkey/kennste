@@ -1,0 +1,92 @@
+:host {
+  position: absolute;
+  right: 200px;
+  top: 0;
+  bottom: 0;
+  width: 416px;
+  background-color: #666666;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  border-left: 1px solid #e5e5e5;
+
+  box-shadow: -5px -5px 15px 1px rgba(0,0,0,0.1);
+}
+
+:host > .logo {
+  text-align: center;
+  padding: 20px;
+  color: #ff7575;
+  font-weight:bolder;
+  font-size: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:host > .logo > span{
+  color: #eee;
+  font-size: 14px;
+  /* background-color: #eee; */
+}
+
+.capacity {
+  display: flex;
+  flex-flow: wrap-reverse;
+  align-content: baseline;
+}
+
+.bed {
+  background-color: #555;
+  height: 25px;
+  width: 25px;
+  margin: 1px 1px 0 0;
+}
+
+.covid {
+  background-color: #ff7575;
+}
+
+.used {
+  background-color: #222;
+}
+
+
+
+.chart-numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.numbers {
+  font-weight: bolder;
+  font-size: 24px;
+  color: #ff7575;
+  text-align: center;
+}
+
+.numbers > span {
+  display: block;
+  font-weight: lighter;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #aaa;
+  padding-top: 10px;
+}
+
+.chart-inner {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 24px;
+  color: #ff7575;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 0;
+}
+.chart-inner > span {
+  display: block;
+  font-size: 11px;
+  font-weight: lighter;
+  color: #aaa;
+  margin-top: 10px;
+}

@@ -1,1 +1,14 @@
-<p>settings works!</p>
+<div class="close" (click)="switch()"></div>
+<div style="margin-top: 80px; margin-bottom: 20px;">
+  <h3 style="font-weight: lighter; color: #aaa; font-size: 14px;">Parameter</h3>
+</div>
+<div> Region: <input type="text" value="Dortmund"/> </div>
+<div> Population: <input type="text" value="600000"/> </div>
+<div> Infizierte: <input type="text" value="25000"/> </div>
+<div> Todesfällle: <input type="text" value="1200"/> </div>
+<div> Verfügbare Betten: <input type="text" value="300"/> </div>
+<div> Betten belegt: <input type="text" value="285"/> </div>
+<div> Covid Patienten: <input type="text" value="44"/> </div>
+<div>
+  <button (click)="start_outbreak()">starte simulation</button>
+</div>

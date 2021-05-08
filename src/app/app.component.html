@@ -1,3 +1,12 @@
-<div>
-  kennste?
-</div>
+<h1>City - <span style="color: #ff7575;">Covid19</span> Outbreak</h1>
+
+
+<app-outbreak-area></app-outbreak-area>
+
+<app-settings [class.out]="!(state.settingsOn.val$ | async)"></app-settings>
+<app-kpis></app-kpis>
+<app-hospitalization></app-hospitalization>
+
+
+
+<app-spinner></app-spinner>

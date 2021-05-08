@@ -1,1 +1,7 @@
-<p>kpis works!</p>
+<app-kpi-item title="Einwohner" [value]="600000"></app-kpi-item>
+<app-kpi-item title="Infiziert" [value]="25000" [share]="4.5"></app-kpi-item>
+<app-kpi-item title="Stationär behandelt" [value]="5000" [share]="10"></app-kpi-item>
+<app-kpi-item title="Todesfällle" [value]="1000" [share]="5"></app-kpi-item>
+<app-kpi-item class="warning" title="kennen min. einen Infizierten, weil sie selbst infiziert waren." [value]="28000" [share]="6"></app-kpi-item>
+<app-kpi-item title="kennen min. einen Infizierten, obwohl sie selbst nicht infiziert waren." [value]="2000" [share]="1"></app-kpi-item>
+<app-kpi-item title="kennen niemanden aus seinem unmittelbaren Sozialen Umfeld, der infiziert ist." [value]="580000" [share]="95"></app-kpi-item>
