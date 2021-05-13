@@ -49,7 +49,7 @@ async function startSimulation(settings: Settings, updateClbk: any): Promise<Vir
   virus.infect(city);
 
   virus.humansFlat.forEach(h => {
-    drawPixel(h.x, h.y, '#fff', settings.itemSize);
+    drawPixel(h.x, h.y, '#aaaaaa', settings.itemSize);
   });
 
   const clusters = randomize(virus.humansFlat).filter(h => h.isCoreOfCluster);
