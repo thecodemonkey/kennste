@@ -2,13 +2,16 @@
 <div style="margin-top: 80px; margin-bottom: 20px;">
   <h3 style="font-weight: lighter; color: #aaa; font-size: 14px;">Parameter</h3>
 </div>
-<div> Region: <input type="text" value="Dortmund"/> </div>
-<div> Population: <input type="text" value="600000"/> </div>
-<div> Infizierte: <input type="text" value="25000"/> </div>
-<div> Todesfällle: <input type="text" value="1200"/> </div>
-<div> Verfügbare Betten: <input type="text" value="300"/> </div>
-<div> Betten belegt: <input type="text" value="285"/> </div>
-<div> Covid Patienten: <input type="text" value="44"/> </div>
-<div>
-  <button (click)="start_outbreak()">starte simulation</button>
-</div>
+
+<form (ngSubmit)="submit($event)" [formGroup]="form">
+  <div> Region: <input formControlName="region" autocomplete="off"/> </div>
+  <div> Population: <input formControlName="population" autocomplete="off"/> </div>
+  <div> Infizierte: <input formControlName="infected" autocomplete="off"/> </div>
+  <div> Todesfälle: <input formControlName="dead" autocomplete="off"/> </div>
+  <div> Verfügbare Betten: <input formControlName="bedsAvailable" autocomplete="off"/> </div>
+  <div> Betten belegt: <input formControlName="bedsUsed" autocomplete="off"/> </div>
+  <div> Covid Patienten: <input formControlName="bedsCovid" autocomplete="off"/> </div>
+  <div>
+    <button type="submit">starte simulation</button>
+  </div>
+</form>

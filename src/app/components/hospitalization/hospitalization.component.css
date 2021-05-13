@@ -11,6 +11,13 @@
   border-left: 1px solid #e5e5e5;
 
   box-shadow: -5px -5px 15px 1px rgba(0,0,0,0.1);
+  transition: all 1s;
+  transition-delay: .2s;
+}
+
+:host.out {
+  right: -500px;
+  transition-delay: 0s;
 }
 
 :host > .logo {

@@ -11,4 +11,5 @@ h1 {
   left: 100px;
   top: -2px;
   font-family: Arial, Helvetica, sans-serif;
+  z-index: 9;
 }

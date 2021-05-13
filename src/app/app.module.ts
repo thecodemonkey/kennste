@@ -7,7 +7,8 @@ import { HospitalizationComponent } from './components/hospitalization/hospitali
 import { KpisComponent } from './components/kpis/kpis.component';
 import { KpiItemComponent } from './components/kpis/kpi-item/kpi-item.component';
 import { OutbreakAreaComponent } from './components/outbreak-area/outbreak-area.component';
-import { SpinnerComponent } from './shared/spinner/spinner.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { SpinnerComponent } from './shared/spinner/spinner.component';
     SpinnerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

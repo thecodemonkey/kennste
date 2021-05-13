@@ -1,11 +1,11 @@
-<h1>City - <span style="color: #ff7575;">Covid19</span> Outbreak</h1>
+<h1>{{(settings.s.val$ | async).region}} - <span style="color: #ff7575;">Covid19</span> Outbreak</h1>
 
 
 <app-outbreak-area></app-outbreak-area>
 
 <app-settings [class.out]="!(state.settingsOn.val$ | async)"></app-settings>
-<app-kpis></app-kpis>
-<app-hospitalization></app-hospitalization>
+<app-kpis [class.out]="!(state.kpisOn.val$ | async)"></app-kpis>
+<app-hospitalization [class.out]="!(state.hospitalOn.val$ | async)"></app-hospitalization>
 
 
 

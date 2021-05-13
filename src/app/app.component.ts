@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {AppStateService} from './state/app.state.service';
+import {SettingsService} from './components/settings/settings.service';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,6 @@ import {AppStateService} from './state/app.state.service';
 export class AppComponent {
   title = 'kennste-ng';
 
-  constructor(public state: AppStateService) {
+  constructor(public state: AppStateService, public settings: SettingsService) {
   }
 }

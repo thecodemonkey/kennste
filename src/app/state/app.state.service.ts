@@ -5,4 +5,6 @@ import {StateProperty} from './state.property';
 export class AppStateService {
   settingsOn = new StateProperty<boolean>(false);
   spinnerOn = new StateProperty<boolean>(false);
+  hospitalOn = new StateProperty<boolean>(false);
+  kpisOn = new StateProperty<boolean>(false);
 }
