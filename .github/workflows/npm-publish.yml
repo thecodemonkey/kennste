@@ -1,0 +1,24 @@
+# This workflow will run tests using node and then publish a package to GitHub Packages when a release is created
+# For more information see: https://help.github.com/actions/language-and-framework-guides/publishing-nodejs-packages
+
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.last.outputs.version }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: thecodemonkey/action-get-gradle-version@master
+        id: version
+ 
+  deploy:
+    runs-on: [ self-hosted ]
+    needs: build
+    steps:
+      - run: 'echo version ${{needs.build.outputs.version}}'
