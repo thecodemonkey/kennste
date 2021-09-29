@@ -13,6 +13,7 @@ jobs:
       version: ${{ steps.last.outputs.version }}
     steps:
       - uses: actions/checkout@v2
+      - run: ls
       - uses: thecodemonkey/action-get-gradle-version@master
         id: version
  
